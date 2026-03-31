@@ -44,9 +44,9 @@ function Hero() {
       {/* Content: left text, right photos */}
       <div className="max-w-page mx-auto px-6 pt-10 pb-6 flex flex-col md:flex-row gap-8 md:gap-6">
         {/* Left column */}
-        <div className="flex-1 md:max-w-[45%] pb-4">
+        <div className="flex-1 md:max-w-[45%] pb-4 text-center md:text-left">
           <h2 className="font-serif text-[clamp(28px,3.5vw,42px)] leading-[1.15] mb-6">
-            Launch A Category-Defining Newsletter On Substack In 14 Days
+            Launch A Category-Defining Substack Newsletter In 14 Days
           </h2>
           <p className="font-sans text-[15px] text-black/70 leading-relaxed mb-2">
             A step-by-step playbook to own your niche, turn readers into paying subscribers, and build multiple revenue streams with Substack as the engine.
