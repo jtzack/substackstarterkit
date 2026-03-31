@@ -46,11 +46,10 @@ function Hero() {
         {/* Left column */}
         <div className="flex-1 md:max-w-[45%] pb-4">
           <h2 className="font-serif text-[clamp(28px,3.5vw,42px)] leading-[1.15] mb-6">
-            Launch A Category-Defining{' '}
-            <strong>Newsletter On Substack In 14 Days</strong>
+            Launch A Category-Defining Newsletter On Substack In 14 Days
           </h2>
           <p className="font-sans text-[15px] text-black/70 leading-relaxed mb-2">
-            Own your niche. Turn readers into paying subscribers. And build a Substack that generates recurring revenue on autopilot.
+            A step-by-step playbook to own your niche, turn readers into paying subscribers, and build a Substack that generates recurring revenue on autopilot.
           </p>
 
           <a href="https://ship.samcart.com/products/substack-starter-kit" className="inline-block bg-black text-white font-serif text-[14px] font-normal uppercase tracking-[0.1em] px-10 py-4 hover:bg-black/85 transition">
