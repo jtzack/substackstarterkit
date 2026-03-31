@@ -74,6 +74,8 @@ function HowItWorks() {
   const stats = [
     { num: '6', label: 'Video Modules', desc: '6 recorded trainings.\nWatch at your own pace.\nReturn anytime.' },
     { num: '14', label: 'Days to Launch', desc: 'From blank page to\npositioned, monetized,\nand running newsletter\nin about two weeks.' },
+    { num: '9', label: 'Mega-Prompts', desc: 'Ready-to-use prompts for\nnaming, offer, welcome\nemail, idea generation,\nnewsletter, and Notes.' },
+    { num: '2', label: 'Cowork .Skills', desc: 'Custom AI tools for\nNotes and Lead Magnets—\nbuild faster with AI.' },
     { num: '∞', label: 'Lifetime Access', desc: 'All replays, slides,\ntemplates, .Skills, and\nbonuses yours to\nkeep forever.' },
     { num: '2', label: 'World-Class\nInstructors', desc: 'Dickie Bush and Nicolas\nCole, the people\nbehind the internet\'s\nbiggest writing\nbusinesses.' },
   ]
@@ -89,18 +91,25 @@ function HowItWorks() {
           What is the Substack Starter Kit?
         </h2>
         <div className="w-full h-px bg-black/15 mb-4" />
-        <p className="font-sans text-[15px] text-black/70 leading-relaxed mb-10 max-w-[700px]">
-          A self-paced program where you build your newsletter from the ground up—or relaunch one that stalled. Every module, you leave with something done. Not notes. Not homework. A real deliverable running on your Substack.
+        <p className="font-sans text-[15px] text-black/70 leading-relaxed mb-10">
+          A self-paced program inside Skool where you build your newsletter from the ground up—or relaunch one that stalled. Every module, you leave with something done. Not notes. Not homework. A real deliverable running on your Substack.
         </p>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-black/10">
-          {stats.map((s, i) => (
-            <div key={i} className="bg-cream p-6">
-              <span className="font-display text-[clamp(36px,4vw,48px)] font-bold text-orange leading-none">{s.num}</span>
-              <p className="font-sans text-[16px] font-bold mt-1 whitespace-pre-line">{s.label}</p>
-              <p className="font-sans text-[13px] text-black/60 mt-2 whitespace-pre-line leading-relaxed">{s.desc}</p>
+        <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-start">
+          <div className="w-full md:w-[380px] flex-shrink-0">
+            <img src="/images/ssk-skool.png" alt="Substack Starter Kit" className="w-full object-contain" />
+          </div>
+          <div className="flex-1">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-px bg-black/10">
+              {stats.map((s, i) => (
+                <div key={i} className="bg-cream p-4">
+                  <span className="font-display text-[clamp(28px,3vw,36px)] font-bold text-orange leading-none">{s.num}</span>
+                  <p className="font-sans text-[13px] font-bold mt-1 whitespace-pre-line">{s.label}</p>
+                  <p className="font-sans text-[11px] text-black/60 mt-1 whitespace-pre-line leading-relaxed">{s.desc}</p>
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
         </div>
       </div>
     </section>
