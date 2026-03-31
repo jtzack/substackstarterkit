@@ -60,22 +60,9 @@ function Hero() {
 
         </div>
 
-        {/* Right column—headshots, stretches to match left column height */}
-        <div className="flex-1 flex gap-3 justify-center md:justify-end">
-          <div className="flex flex-col items-start flex-1 max-w-[240px]">
-            <div className="w-full flex-1 min-h-0 rounded overflow-hidden">
-              <img src="/images/cole.png" alt="Dickie Bush" className="w-full h-full object-cover object-top" />
-            </div>
-            <div className="w-full h-px bg-black/20 mt-2" />
-            <span className="font-serif text-[14px] mt-1">Dickie Bush</span>
-          </div>
-          <div className="flex flex-col items-start flex-1 max-w-[240px]">
-            <div className="w-full flex-1 min-h-0 rounded overflow-hidden">
-              <img src="/images/dickie.png" alt="Nicolas Cole" className="w-full h-full object-cover object-top" />
-            </div>
-            <div className="w-full h-px bg-black/20 mt-2" />
-            <span className="font-serif text-[14px] mt-1">Nicolas Cole</span>
-          </div>
+        {/* Right column—product box */}
+        <div className="flex-1 flex justify-center md:justify-end">
+          <img src="/images/SSK-Product-Box.png" alt="Substack Starter Kit" className="w-full max-w-[480px] object-contain" />
         </div>
       </div>
     </section>
@@ -233,6 +220,63 @@ function Sessions() {
   )
 }
 
+/* ─── Section 4b: AI Writing Skool ─── */
+function AIWritingSkool() {
+  const perks = [
+    { title: 'AI Cole', desc: 'Our custom AI model trained on all of our programs, curriculums, books, and content. Ask it anything, 24/7.', value: '$5,000+ value' },
+    { title: 'Monday Hot Seats with Cole', desc: 'Submit your questions and workshop your specific situation live.', value: '$3,000+ value' },
+    { title: 'Weekly AI/Tech Clinic with Mitch Harris', desc: 'Office hours to troubleshoot, learn new AI tools, and stay on the cutting edge.', value: '$1,500+ value' },
+    { title: 'Monthly Mini-Products, Templates, Prompts, and .Skills', desc: 'New resources dropped every month that you can download and use immediately.', value: '$1,000+ value' },
+  ]
+
+  return (
+    <section className="bg-dark pt-20 pb-4 px-6">
+      <div className="max-w-page mx-auto">
+        <p className="font-sans text-[12px] font-bold text-orange uppercase tracking-[0.15em] mb-3">Included Free</p>
+        <h2 className="font-serif text-[clamp(30px,4vw,44px)] text-cream leading-[1.15] mb-3">
+          Free 30-Day Trial to AI Writing Skool
+        </h2>
+        <div className="w-full h-px bg-white/10 mb-10" />
+
+        {/* Row 1: full-width intro */}
+        <p className="font-sans text-[15px] text-white/70 leading-relaxed mb-10">
+          AI Writing Skool is THE community for writers and creators building in the new AI Economy—and you get full access for 30 days so you can get feedback on your newsletter, trade ideas, and stay sharp together as you build your Substack.
+        </p>
+
+        {/* Row 2: image on left, perks on right */}
+        <div className="flex flex-col md:flex-row gap-10 md:gap-12 items-start mb-10">
+          <div className="w-full md:w-[45%] flex-shrink-0">
+            <img src="/images/AIWS.png" alt="AI Writing Skool" className="w-full object-contain" />
+          </div>
+          <div className="flex-1">
+            <p className="font-sans text-[12px] font-bold text-orange uppercase tracking-[0.15em] mb-4">Inside, you'll unlock:</p>
+            <div className="space-y-5">
+              {perks.map((p) => (
+                <div key={p.title} className="flex gap-3">
+                  <span className="text-orange mt-1 flex-shrink-0">→</span>
+                  <div>
+                    <span className="font-sans text-[14px] font-bold text-cream">{p.title}:</span>
+                    <span className="font-sans text-[14px] text-white/60"> {p.desc}</span>
+                    <span className="font-sans text-[13px] text-orange font-semibold"> ({p.value})</span>
+                  </div>
+                </div>
+              ))}
+              <div className="flex gap-3">
+                <span className="text-orange mt-1 flex-shrink-0">→</span>
+                <div>
+                  <span className="font-sans text-[14px] font-bold text-cream">Daily Q&A Channel:</span>
+                  <span className="font-sans text-[14px] text-white/60"> Never get stuck. Get answers from the community and our team every single day.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  )
+}
+
 /* ─── Section 5: Free Bonuses ─── */
 function Bonuses() {
   const bonuses = [
@@ -247,9 +291,9 @@ function Bonuses() {
   return (
     <section className="bg-dark py-20 px-6">
       <div className="max-w-page mx-auto">
-        <p className="font-sans text-[12px] font-bold text-orange uppercase tracking-[0.15em] mb-3">Free Bonuses Included</p>
+        <p className="font-sans text-[12px] font-bold text-orange uppercase tracking-[0.15em] mb-3">Plus</p>
         <h2 className="font-serif text-[clamp(30px,4vw,44px)] text-cream leading-[1.15] mb-3">
-          Everything you need to launch and<br />stay consistent.
+          The Substack Starter Bonus Bundle
         </h2>
         <div className="w-full h-px bg-white/10 mb-10" />
 
@@ -403,6 +447,7 @@ function NewslettersProof() {
 function Pricing({ ctaUrl }: { ctaUrl: string }) {
   const valueItems = [
     { name: '6 Video Modules with Dickie Bush & Nicolas Cole', price: '$1,200' },
+    { name: 'Free 30-Day Trial to AI Writing Skool', price: '$10,000' },
     { name: 'BONUS: Big Substack FAQ File', price: '$99' },
     { name: 'BONUS: Design Secrets', price: '$149' },
     { name: 'BONUS: Substack Notes Swipe File', price: '$99' },
@@ -432,7 +477,7 @@ function Pricing({ ctaUrl }: { ctaUrl: string }) {
           ))}
           <div className="flex justify-between items-center pt-3">
             <span className="font-sans text-[13px] font-bold">Total Value</span>
-            <span className="font-serif text-[24px] font-bold">$1,944</span>
+            <span className="font-serif text-[24px] font-bold">$11,944</span>
           </div>
         </div>
 
@@ -561,6 +606,7 @@ export default function App({ withFbPixel = false, ctaUrl = DEFAULT_CTA_URL }: {
       <FadeIn><HowItWorks /></FadeIn>
       <FadeIn><RightForYou /></FadeIn>
       <FadeIn><Sessions /></FadeIn>
+      <FadeIn><AIWritingSkool /></FadeIn>
       <FadeIn><Bonuses /></FadeIn>
       <FadeIn><Instructors /></FadeIn>
       <FadeIn><NewslettersProof /></FadeIn>
