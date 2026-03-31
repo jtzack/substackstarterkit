@@ -401,10 +401,6 @@ function NewslettersProof() {
 function Pricing({ ctaUrl }: { ctaUrl: string }) {
   const valueItems = [
     { name: '6 Video Modules with Dickie Bush & Nicolas Cole', price: '$1,200' },
-    { name: 'Module Slide Decks', price: '$100' },
-    { name: 'Substack Templates Pack', price: '$99' },
-    { name: 'Newsletter Writing .Skill', price: '$150' },
-    { name: 'Notes Traffic .Skill', price: '$150' },
     { name: 'BONUS: Big Substack FAQ File', price: '$99' },
     { name: 'BONUS: Design Secrets', price: '$149' },
     { name: 'BONUS: Substack Notes Swipe File', price: '$99' },
@@ -434,7 +430,7 @@ function Pricing({ ctaUrl }: { ctaUrl: string }) {
           ))}
           <div className="flex justify-between items-center pt-3">
             <span className="font-sans text-[13px] font-bold">Total Value</span>
-            <span className="font-serif text-[24px] font-bold">$2,443</span>
+            <span className="font-serif text-[24px] font-bold">$1,944</span>
           </div>
         </div>
 
