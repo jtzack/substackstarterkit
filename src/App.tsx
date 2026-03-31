@@ -230,7 +230,7 @@ function AIWritingSkool() {
   ]
 
   return (
-    <section className="bg-dark pt-20 pb-4 px-6">
+    <section className="bg-dark pt-20 pb-16 px-6">
       <div className="max-w-page mx-auto">
         <p className="font-sans text-[12px] font-bold text-orange uppercase tracking-[0.15em] mb-3">Included Free</p>
         <h2 className="font-serif text-[clamp(30px,4vw,44px)] text-cream leading-[1.15] mb-3">
@@ -272,6 +272,11 @@ function AIWritingSkool() {
           </div>
         </div>
 
+        <div className="mt-10 text-center">
+          <a href={DEFAULT_CTA_URL} className="inline-block bg-orange text-white font-sans text-[15px] font-bold uppercase tracking-[0.08em] px-16 py-4 rounded-lg hover:bg-orange/90 transition whitespace-nowrap">
+            Get the Substack Starter Kit
+          </a>
+        </div>
       </div>
     </section>
   )
@@ -291,7 +296,7 @@ function Bonuses() {
   return (
     <section className="bg-dark py-20 px-6">
       <div className="max-w-page mx-auto">
-        <p className="font-sans text-[12px] font-bold text-orange uppercase tracking-[0.15em] mb-3">Plus</p>
+        <p className="font-sans text-[12px] font-bold text-orange uppercase tracking-[0.15em] mb-3">Plus you'll also get</p>
         <h2 className="font-serif text-[clamp(30px,4vw,44px)] text-cream leading-[1.15] mb-3">
           The Substack Starter Bonus Bundle
         </h2>
