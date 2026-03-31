@@ -53,7 +53,7 @@ function Hero() {
           </p>
 
           <div className="text-center md:text-left">
-            <a href="https://ship.samcart.com/products/substack-starter-kit" className="inline-block bg-black text-white font-serif text-[14px] font-normal uppercase tracking-[0.1em] px-10 py-4 hover:bg-black/85 transition whitespace-nowrap">
+            <a href="https://ship.samcart.com/products/substack-starter-kit" className="block md:inline-block bg-black text-white font-serif text-[14px] font-normal uppercase tracking-[0.1em] px-10 py-4 hover:bg-black/85 transition text-center">
               Get the Substack Starter Kit
             </a>
           </div>
