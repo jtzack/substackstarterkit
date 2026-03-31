@@ -52,9 +52,11 @@ function Hero() {
             A step-by-step playbook to own your niche, turn readers into paying subscribers, and build a Substack that generates recurring revenue on autopilot.
           </p>
 
-          <a href="https://ship.samcart.com/products/substack-starter-kit" className="inline-block bg-black text-white font-serif text-[14px] font-normal uppercase tracking-[0.1em] px-10 py-4 hover:bg-black/85 transition whitespace-nowrap">
-            Get the Substack Starter Kit
-          </a>
+          <div className="text-center md:text-left">
+            <a href="https://ship.samcart.com/products/substack-starter-kit" className="inline-block bg-black text-white font-serif text-[14px] font-normal uppercase tracking-[0.1em] px-10 py-4 hover:bg-black/85 transition whitespace-nowrap">
+              Get the Substack Starter Kit
+            </a>
+          </div>
 
         </div>
 
