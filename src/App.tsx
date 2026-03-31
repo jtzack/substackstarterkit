@@ -273,7 +273,7 @@ function AIWritingSkool() {
         </div>
 
         <div className="mt-10 text-center">
-          <a href={DEFAULT_CTA_URL} className="inline-block bg-orange text-white font-sans text-[15px] font-bold uppercase tracking-[0.08em] px-16 py-4 rounded-lg hover:bg-orange/90 transition whitespace-nowrap">
+          <a href={DEFAULT_CTA_URL} className="inline-block bg-orange text-white font-sans text-[15px] font-bold uppercase tracking-[0.08em] px-16 py-4 rounded-lg hover:bg-orange/90 transition">
             Get the Substack Starter Kit
           </a>
         </div>
