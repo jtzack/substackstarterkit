@@ -49,7 +49,7 @@ function Hero() {
             Launch A Category-Defining Newsletter On Substack In 14 Days
           </h2>
           <p className="font-sans text-[15px] text-black/70 leading-relaxed mb-2">
-            A step-by-step playbook to own your niche, turn readers into paying subscribers, and build a Substack that generates recurring revenue on autopilot.
+            A step-by-step playbook to own your niche, turn readers into paying subscribers, and build multiple revenue streams with Substack as the engine.
           </p>
 
           <div className="text-center md:text-left">
